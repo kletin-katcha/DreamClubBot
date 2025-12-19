@@ -1,0 +1,25 @@
+#Bot Core Dependencies
+
+discord.py>=2.6.3
+pydantic-settings>=2.4.0
+yt-dlp>=2025.11.12
+spotipy>=2.24.0
+wavelink>=3.0.0
+aiosqlite>=0.20.0
+python-dotenv>=1.0.1
+humanize>=4.9.0
+PyNaCl>=1.5.0
+sqlmodel>=0.0.22
+asyncpg>=0.30.0
+deep-translator>=1.11.4
+feedparser>=6.0.10
+uvloop>=0.21.0; sys_platform != 'win32'
+
+#Web Dashboard Dependencies
+
+fastapi>=0.100.0
+uvicorn>=0.23.0
+jinja2>=3.1.0
+python-multipart>=0.0.6
+itsdangerous>=2.1.2 # Para sessões seguras
+httpx>=0.24.0 # Para requisições OAuth2

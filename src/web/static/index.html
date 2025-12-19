@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Club Dashboard</title>
+    
+    <!-- Ícones e Fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-dragon"></i> Dream Club
+            </div>
+            <nav>
+                <a href="#" class="nav-link active" data-tab="overview">
+                    <i class="fa-solid fa-chart-pie"></i> Visão Geral
+                </a>
+                <a href="#" class="nav-link" data-tab="modules">
+                    <i class="fa-solid fa-cubes"></i> Módulos
+                </a>
+                <a href="#" class="nav-link" data-tab="settings">
+                    <i class="fa-solid fa-gear"></i> Configurações
+                </a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">Admin</div>
+                <span>Painel Admin</span>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="top-bar">
+                <h2 id="page-title">Visão Geral</h2>
+                <div class="server-selector">
+                    <span>Servidor Atual:</span>
+                    <strong>Dream Club Oficial</strong>
+                </div>
+            </header>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="loading-container">
+                <div class="spinner"></div>
+            </div>
+
+            <!-- Content Area (Injetado via JS) -->
+            <div id="dashboard-content" class="fade-in">
+                <!-- O conteúdo vai aqui via JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i class="fa-solid fa-check-circle"></i>
+        <span>Alterações salvas com sucesso!</span>
+    </div>
+
+    <!-- Nosso JS (Module para suportar imports modernos) -->
+    <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
